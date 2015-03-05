@@ -22,8 +22,7 @@ class Luhn:
         remainder = sum(Luhn.luhn(number)) % 10
         if remainder == 0:
             return number
-        else:
-            return number + (10 - remainder)
+        return number + (10 - remainder)
 
     def addends(self):
         return Luhn.luhn(self.number)
